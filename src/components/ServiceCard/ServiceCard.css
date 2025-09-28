@@ -1,0 +1,92 @@
+:root {
+  --card-bg: #fff;
+  --card-fg: #1a1a1a;
+  --card-muted: #444;
+  --card-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  --card-shadow-hover: 0 12px 28px rgba(230, 57, 70, 0.35);
+  --card-radius: 18px;
+  --card-pad-y: 35px;
+  --card-pad-x: 28px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  color: var(--card-fg);
+  padding: var(--card-pad-y) var(--card-pad-x);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 360px;
+  min-width: 260px;
+  flex: 1 1 clamp(260px, 28vw, 360px);
+
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* ← icon+titlu și conținut pe stânga */
+}
+
+.service-card:hover,
+.service-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Header: icon + titlu pe stânga */
+.service-card__header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start; /* ← nu 'left': valoarea corectă e flex-start */
+  gap: 10px;
+  margin: 0 0 14px 0;
+}
+
+/* Nou: icon propriu colorat prin mask */
+.service-card__icon-mask {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-color: #e63946; /* roșul tău */
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease; /* pentru efect la hover */
+}
+
+/* Efect de „tilt” la hover/focus, similar cu cel de la svg dinainte */
+.service-card:hover .service-card__icon-mask,
+.service-card:focus-visible .service-card__icon-mask {
+  transform: rotate(15deg) scale(1.15);
+}
+
+.service-card__title {
+  margin: 0;
+  font-size: clamp(1.15rem, 1.05rem + 0.55vw, 1.5rem);
+  line-height: 1.3;
+}
+
+.service-card__list {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  list-style: disc;
+  list-style-position: outside;
+  text-align: left;
+  color: var(--card-muted);
+  font-size: clamp(0.95rem, 0.92rem + 0.3vw, 1.05rem);
+  line-height: 1.6;
+}
+
+.service-card__list li {
+  margin-bottom: 6px;
+}
+
+/* Respectă preferința de reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .service-card,
+  .service-card__icon-mask {
+    transition: none;
+    transform: none !important;
+  }
+}

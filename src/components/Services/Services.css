@@ -1,0 +1,60 @@
+:root {
+  --services-bg: linear-gradient(135deg, #f7f7f7 0%, #eaeaea 100%);
+  --services-fg: #1a1a1a;
+  --services-accent: #e63946;
+  --services-pad-y: 5px;
+  --services-pad-x: 20px;
+  /* titlu un pic mai mic */
+  --services-title-size: clamp(1.6rem, 2vw + 0.9rem, 2rem);
+}
+
+.services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* puțin mai mult spațiu */
+  align-items: stretch;
+  padding-block: 10px;
+}
+
+.services__card {
+  flex: 1 1 280px; /* cardurile mai late (min width mai mare) */
+  max-width: 360px; /* limitează lățimea maximă */
+  padding: 20px 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.services {
+  padding: var(--services-pad-y) var(--services-pad-x);
+  text-align: center;
+  color: var(--services-fg);
+}
+
+.services__title {
+  margin: 0 0 15px 0;
+  font-size: var(--services-title-size);
+  line-height: 1.2;
+}
+
+.services__underline {
+  width: 90px;
+  height: 4px;
+  background-color: var(--services-accent);
+  margin: 0 auto 12px;
+  border-radius: 2px;
+}
+
+@media (max-width: 480px) {
+  .services__grid {
+    gap: 12px;
+  }
+
+  .services__card {
+    flex: 1 1 100%; /* pe mobil cardul ocupă full width */
+  }
+}

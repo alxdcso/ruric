@@ -1,0 +1,102 @@
+:root {
+  --accent: #e63946;
+  --text: #1a1a1a;
+  --muted: #444;
+}
+
+.about {
+  padding: 80px 60px;
+  color: var(--text);
+}
+
+.about__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 420px;
+}
+
+.about__line {
+  width: 10px;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.8s ease;
+}
+
+.about__textwrap {
+  flex: 1;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease 0.25s, transform 0.8s ease 0.25s;
+}
+
+.about__title {
+  margin: 0 0 20px 0;
+  font-size: clamp(1.6rem, 1.2rem + 1vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.about__text {
+  margin: 0;
+  font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.about__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ---- ANIMAȚII ---- */
+.about__animate.is-visible.about__line {
+  transform: scaleY(1);
+}
+.about__animate.is-visible.about__textwrap {
+  opacity: 1;
+  transform: translateX(0);
+}
+.about__animate.is-visible.about__right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsiv */
+@media (max-width: 900px) {
+  .about__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about__left,
+  .about__right {
+    min-height: 320px;
+  }
+  /* linia rămâne VERTICALĂ și pe mobil, doar mai îngustă dacă vrei */
+  .about__line {
+    width: 8px;
+    height: 100%;
+    transform-origin: bottom;
+  }
+}

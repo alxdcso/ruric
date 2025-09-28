@@ -1,0 +1,65 @@
+:root {
+  --hero-bg: linear-gradient(180deg, #f7f7f7 0%, #f1f1f1 100%);
+  --hero-fg: #1a1a1a;
+  --hero-muted: #555;
+  --hero-accent: #333;
+  --hero-maxw: 900px;
+  --hero-pad-y: 32px;
+  --hero-pad-x: 20px;
+}
+
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-fg);
+  text-align: center;
+  padding: var(--hero-pad-y) var(--hero-pad-x) calc(var(--hero-pad-y) + 8px) var(--hero-pad-x);
+}
+
+.hero__container {
+  max-width: var(--hero-maxw);
+  margin: 0 auto;
+  padding-inline: 8px;
+}
+
+.hero__title {
+  font-size: clamp(1.6rem, 2.4vw + 1rem, 2.4rem);
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+  color: var(--hero-accent);
+  letter-spacing: -0.01em;
+}
+
+.hero__text {
+  font-size: clamp(1rem, 0.6vw + 0.9rem, 1.125rem);
+  color: var(--hero-muted);
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 420ms ease,
+    transform 420ms ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .fade-in.visible {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__text {
+    max-width: 95%;
+  }
+}
