@@ -240,7 +240,7 @@ export const translations = {
         },
         {
           title: 'Капитальный ремонт двигателя',
-          iconSrc: 'img/piston.png',
+          iconSrc: '/img/piston.png',
           points: [
             'Демонтаж и полная диагностика двигателя',
             'Замена изношенных деталей',
