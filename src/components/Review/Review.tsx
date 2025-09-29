@@ -23,7 +23,6 @@ const Reviews: React.FC = () => {
 
     const cards = Array.from(root.querySelectorAll<HTMLElement>('.review-card'));
 
-    // Respectă preferința de “reduce motion”
     const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) {
       cards.forEach((c) => c.classList.add('is-visible'));

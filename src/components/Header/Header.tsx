@@ -22,10 +22,10 @@ const Header: React.FC = () => {
 
         <div className="top-right">
           <div className="phones">
-            <a href="tel:+37360011111">+373 600 111 11</a>
-            <a href="tel:+37360022222">+373 600 222 22</a>
-            <a href="tel:+37360033333">+373 600 333 33</a>
-            <a href="tel:+37360044444">+373 600 444 44</a>
+            <a href="tel:+37369153518">+373 691 535 18</a>
+            <a href="tel:+37369133180">+373 691 331 80</a>
+            <a href="tel:+37369329273">+373 693 292 73</a>
+            <a href="tel:027124168">027 124 168</a>
           </div>
           <div className="lang-switch">
             <button onClick={toggleLanguage}>

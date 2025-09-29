@@ -25,7 +25,7 @@ const Tips: React.FC = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
-            io.unobserve(entry.target); // animăm o singură dată
+            io.unobserve(entry.target);
           }
         });
       },

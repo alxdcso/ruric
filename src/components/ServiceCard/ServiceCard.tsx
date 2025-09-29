@@ -1,16 +1,31 @@
-// ServiceCard.tsx
 import React from 'react';
 import './ServiceCard.css';
 
-interface ServiceCardProps {
+export interface ServiceCardProps {
   title: string;
-  iconSrc: string;   // acum obligatoriu
+  iconSrc: string;
   points?: string[];
+  onClick?: () => void;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, iconSrc, points }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ title, iconSrc, points, onClick }) => {
+  const handleKeyDown: React.KeyboardEventHandler<HTMLDivElement> = (e) => {
+    if (!onClick) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClick();
+    }
+  };
+
   return (
-    <div className="service-card" role="article" tabIndex={0}>
+    <div
+      className={`service-card${onClick ? ' service-card--clickable' : ''}`}
+      role={onClick ? 'button' : 'article'}
+      tabIndex={onClick ? 0 : -1}
+      onClick={onClick}
+      onKeyDown={handleKeyDown}
+      aria-label={title}
+    >
       <div className="service-card__header">
         <span
           className="service-card__icon-mask"

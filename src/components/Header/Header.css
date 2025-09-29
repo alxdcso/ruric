@@ -1,9 +1,8 @@
-/* Bloc sus */
 .top-bar {
   background-color: #2b2b2b;
   color: #fff;
   font-size: 16px;
-  padding: 25px 60px; /* mai mult padding sus-jos și lateral */
+  padding: 25px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +35,7 @@
   transition: color 0.3s ease;
 }
 .phones a:hover {
-  color: #e63946;
+  color: #F2CB4B;
 }
 
 .lang-switch button {
@@ -49,7 +48,7 @@
   transition: color 0.3s ease;
 }
 .lang-switch button:hover {
-  color: #e63946;
+  color: #F2CB4B;
 }
 
 .bottom-bar {
@@ -73,30 +72,26 @@
   gap: 20px;
 }
 
-/* fix: să nu mai sară toate linkurile */
 .nav a {
   color: #1a1a1a;
   text-decoration: none;
   font-weight: 500;
   padding-bottom: 2px;
-  border-bottom: 2px solid transparent;   /* avem border mereu */
-  transition:
-          color 0.25s ease,
-          border-color 0.25s ease;
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s ease,
+  border-color 0.25s ease;
 }
 
 .nav a:hover {
-  color: #e63946;
-  border-bottom-color: #e63946;           /* schimbăm doar culoarea */
+  color: #F2CB4B;
+  border-bottom-color: #F2CB4B;
 }
 
-/* link activ (setat din JS) */
 .nav a.is-active {
-  color: #e63946;
-  border-bottom-color: #e63946;
+  color: #F2CB4B;
+  border-bottom-color: #F2CB4B;
 }
 
-/* focus vizibil la tastatură */
 .nav a:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.25);

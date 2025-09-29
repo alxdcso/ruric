@@ -34,7 +34,7 @@
 }
 
 .arrow:hover {
-  color: #e63946;
+  color: #F2CB4B;
 }
 
 .arrow.left {
@@ -64,5 +64,5 @@
 }
 
 .dot.active {
-  background: #e63946;
+  background: #F2CB4B;
 }

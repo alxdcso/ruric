@@ -4,7 +4,6 @@
   --services-accent: #F2CB4B;
   --services-pad-y: 5px;
   --services-pad-x: 20px;
-  /* titlu un pic mai mic */
   --services-title-size: clamp(1.6rem, 2vw + 0.9rem, 2rem);
 }
 
@@ -12,14 +11,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* puțin mai mult spațiu */
+  gap: 20px;
   align-items: stretch;
   padding-block: 10px;
 }
 
 .services__card {
-  flex: 1 1 280px; /* cardurile mai late (min width mai mare) */
-  max-width: 360px; /* limitează lățimea maximă */
+  flex: 1 1 280px;
+  max-width: 360px;
   padding: 20px 16px;
   border-radius: 12px;
   background: #fff;
@@ -55,6 +54,6 @@
   }
 
   .services__card {
-    flex: 1 1 100%; /* pe mobil cardul ocupă full width */
+    flex: 1 1 100%;
   }
 }

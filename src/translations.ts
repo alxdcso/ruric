@@ -25,12 +25,19 @@ export const translations = {
         'astfel încât mașina ta să fie în siguranță și gata de drum cât mai rapid posibil. ' +
         'Punem accent pe calitate, respectăm termenele și tratăm fiecare client cu profesionalism.',
     },
+    consult: {
+      title: 'Obține o consultație acum',
+      callUs: 'Sunați-ne la:',
+      availability: 'Disponibili Luni–Sâmbătă, 09:00–18:00.',
+      callNow: 'Sună acum',
+      close: 'Închide',
+    },
     services: {
       title: 'Serviciile noastre',
       items: [
         {
           title: 'Schimb ulei',
-          iconSrc: 'img/car-oil.png',
+          icon: 'oil',
           points: [
             'Schimb ulei motor',
             'Schimb ulei cutie de viteze',
@@ -41,18 +48,17 @@ export const translations = {
         },
         {
           title: ' Reparație capitală motor',
-          iconSrc: 'img/piston.png',
+          icon: 'engine',
           points: [
             'Demontare și inspecție completă motor',
             'Înlocuirea pieselor uzate',
-            'Verificare și recondiționare arbore cotit',
             'Curățare și verificare injectoare / sistem injecție',
             'Montaj și testare motor recondiționat'
           ],
         },
         {
           title: 'Sistem de răcire',
-          iconSrc: 'img/car-cooler.png',
+          icon: 'carTemperature',
           points: [
             'Schimb lichid de răcire',
             'Spălare sistem de răcire',
@@ -63,7 +69,7 @@ export const translations = {
         },
         {
           title: 'Diagnoză auto',
-          iconSrc: 'img/check-engine.png',
+          icon: 'check',
           points: [
             'Identificare erori',
             'Raport detaliat pentru client',
@@ -74,7 +80,7 @@ export const translations = {
         },
         {
           title: 'Reparații electrice',
-          iconSrc: 'img/electric.png',
+          icon: 'carElectric',
           points: [
             'Verificare și înlocuire baterie / alternator',
             'Diagnoză și reparare circuite electrice',
@@ -85,7 +91,7 @@ export const translations = {
         },
         {
           title: 'Frâne',
-          iconSrc: 'img/brakes.png',
+          icon: 'carBrake',
           points: [
             'Înlocuire plăcuțe și discuri de frână',
             'Schimb lichid frână și aerisire sistem',
@@ -96,7 +102,7 @@ export const translations = {
         },
         {
           title: 'Suspensie',
-          iconSrc: 'img/car-suspension.png',
+          icon: 'carSuspension',
           points: [
             'Înlocuire amortizoare și arcuri',
             'Brațe, bucșe și articulații',
@@ -107,7 +113,7 @@ export const translations = {
         },
         {
           title: 'Sistem de climatizare',
-          iconSrc: 'img/ac.png',
+          icon: 'airConditional',
           points: [
             'Încărcare și completare freon',
             'Curățare și igienizare instalație A/C',
@@ -118,7 +124,7 @@ export const translations = {
         },
         {
           title: 'DPF/EGR/AdBlue',
-          iconSrc: 'img/dpf.png',
+          icon: 'dpf',
           points: [
             'Curățare filtru de particule (DPF)',
             'Regenerare sau înlocuire filtru DPF',
@@ -129,7 +135,7 @@ export const translations = {
         },
         {
           title: 'Programare chei',
-          iconSrc: 'img/car-key.png',
+          icon: 'carKey',
           points: [
             'Programare chei auto simple și cu cip',
             'Codare telecomenzi pentru centralizare',
@@ -140,7 +146,7 @@ export const translations = {
         },
         {
           title: 'Service roți și anvelope',
-          iconSrc: 'img/tire.png',
+          icon: 'carTire',
           points: [
             'Echilibrare roți',
             'Schimb anvelope sezonier',
@@ -151,7 +157,7 @@ export const translations = {
         },
         {
           title: 'Siguranță și confort',
-          iconSrc: 'img/car-safety.png',
+          icon: 'carSafety',
           points: [
             'Instalare alarme și imobilizatoare auto',
             'Montaj sisteme GPS tracking și antifurt',
@@ -191,7 +197,7 @@ export const translations = {
       addressLabel: 'Adresa:',
       address: 'Ocniţa, Strada Alexandru cel Bun 8A, MD-7101',
       phoneLabel: 'Telefon:',
-      phones: ['+373 123 456 789', '+373 123 456 789', '+373 123 456 789', '+373 123 456 789'],
+      phones: ['+373 691 535 18', '+373 691 331 80', '+373 693 292 73', '027 124 168'],
       programLabel: 'Program:',
       program: 'Luni – Sâmbătă: 09:00–18:00',
       socials: { facebook: 'Facebook', instagram: 'Instagram' },
@@ -224,12 +230,19 @@ export const translations = {
         'чтобы ваш автомобиль был в безопасности и готов к дороге как можно быстрее. ' +
         'Мы делаем упор на качество, соблюдаем сроки и относимся к каждому клиенту профессионально.',
     },
+    consult: {
+      title: 'Получите консультацию сейчас',
+      callUs: 'Позвоните нам по номеру:',
+      availability: 'Доступны Пн–Сб, 09:00–18:00.',
+      callNow: 'Позвонить',
+      close: 'Закрыть',
+    },
     services: {
       title: 'Наши услуги',
       items: [
         {
           title: 'Замена масел и фильтров',
-          iconSrc: 'img/car-oil.png',
+          icon: 'oil',
           points: [
             'Замена моторного масла',
             'Замена масла в коробке передач',
@@ -240,18 +253,17 @@ export const translations = {
         },
         {
           title: 'Капитальный ремонт двигателя',
-          iconSrc: '/img/piston.png',
+          icon: 'engine',
           points: [
             'Демонтаж и полная диагностика двигателя',
             'Замена изношенных деталей',
-            'Проверка и восстановление коленвала',
             'Очистка и проверка форсунок / системы впрыска',
             'Сборка и тестирование восстановленного двигателя'
           ],
         },
         {
           title: 'Система охлаждения',
-          iconSrc: 'img/car-cooler.png',
+          icon: 'carTemperature',
           points: [
             'Замена охлаждающей жидкости',
             'Промывка системы охлаждения',
@@ -262,18 +274,18 @@ export const translations = {
         },
         {
           title: 'Компьютерная диагностика',
-          iconSrc: 'img/check-engine.png',
+          icon: 'check',
           points: [
             'Выявление ошибок',
-            'Подробный отчет для клиента',
+            'Подробный отчёт для клиента',
             'Проверка параметров в реальном времени',
             'Тестирование датчиков и исполнительных механизмов (ABS, Airbag и т.д.)',
-            'Чтение сохраненной истории ошибок в ЭБУ'
+            'Чтение сохранённой истории ошибок в ЭБУ'
           ],
         },
         {
           title: 'Электрика автомобиля',
-          iconSrc: 'img/electric.png',
+          icon: 'carElectric',
           points: [
             'Проверка и замена аккумулятора / генератора',
             'Диагностика и ремонт электрических цепей',
@@ -284,7 +296,7 @@ export const translations = {
         },
         {
           title: 'Тормозная система',
-          iconSrc: 'img/brakes.png',
+          icon: 'carBrake',
           points: [
             'Замена тормозных колодок и дисков',
             'Замена тормозной жидкости и прокачка системы',
@@ -295,7 +307,7 @@ export const translations = {
         },
         {
           title: 'Подвеска',
-          iconSrc: 'img/car-suspension.png',
+          icon: 'carSuspension',
           points: [
             'Замена амортизаторов и пружин',
             'Рычаги, сайлентблоки и шарниры',
@@ -306,7 +318,7 @@ export const translations = {
         },
         {
           title: 'Кондиционер',
-          iconSrc: 'img/ac.png',
+          icon: 'airConditional',
           points: [
             'Заправка и дозаправка фреона',
             'Очистка и дезинфекция системы A/C',
@@ -317,7 +329,7 @@ export const translations = {
         },
         {
           title: 'DPF / EGR / AdBlue',
-          iconSrc: 'img/dpf.png',
+          icon: 'dpf',
           points: [
             'Очистка сажевого фильтра (DPF)',
             'Регенерация или замена фильтра DPF',
@@ -328,7 +340,7 @@ export const translations = {
         },
         {
           title: 'Программирование ключей',
-          iconSrc: 'img/car-key.png',
+          icon: 'carKey',
           points: [
             'Программирование автомобильных ключей с чипом и без',
             'Кодирование пультов для центрального замка',
@@ -338,10 +350,10 @@ export const translations = {
           ],
         },
         {
-          title: 'Шиномонтаж и сервис колес',
-          iconSrc: 'img/tire.png',
+          title: 'Шиномонтаж и сервис колёс',
+          icon: 'carTire',
           points: [
-            'Балансировка колес',
+            'Балансировка колёс',
             'Сезонная замена шин',
             'Ремонт шин (пломбировка, вулканизация)',
             'Проверка и корректировка давления',
@@ -350,10 +362,10 @@ export const translations = {
         },
         {
           title: 'Системы безопасности и комфорта',
-          iconSrc: 'img/car-safety.png',
+          icon: 'carSafety',
           points: [
             'Установка сигнализаций и иммобилайзеров',
-            'Монтаж систем GPS трекинга и защиты от угона',
+            'Монтаж систем GPS-трекинга и защиты от угона',
             'Интеграция парктроников и камер заднего вида'
           ],
         }
@@ -389,7 +401,7 @@ export const translations = {
       addressLabel: 'Адрес:',
       address: 'Окница, ул. Александру чел Бун 8A, MD-7101',
       phoneLabel: 'Телефон:',
-      phones: ['+373 123 456 789', '+373 123 456 789', '+373 123 456 789', '+373 123 456 789'],
+      phones: ['+373 691 535 18', '+373 691 331 80', '+373 693 292 73', '027 124 168'],
       programLabel: 'График работы:',
       program: 'Понедельник – Суббота: 09:00–18:00',
       socials: { facebook: 'Фейсбук', instagram: 'Инстаграм' },
