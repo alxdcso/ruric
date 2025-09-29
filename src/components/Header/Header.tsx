@@ -36,7 +36,7 @@ const Header: React.FC = () => {
       </div>
 
       <div className="bottom-bar">
-        <h1 className="logo">RURIC SERVICE</h1>
+        <h1 className="logo">RURIC SERVICE S.R.L.</h1>
         <nav className="nav">
           <a href="#services">{t.services}</a>
           <a href="#tips">{t.tips}</a>

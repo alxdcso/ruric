@@ -16,7 +16,7 @@
   display: block;
   width: 100px;
   height: 4px;
-  background: #e63946;
+  background: #F2CB4B;
   margin: 12px auto 0;
   border-radius: 2px;
 }
@@ -50,7 +50,7 @@
   height: 60px;
   margin: 0 auto 12px;
   border-radius: 50%;
-  background-color: #e63946;
+  background-color: #F2CB4B;
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;

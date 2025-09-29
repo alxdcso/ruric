@@ -4,7 +4,6 @@
   padding: 40px 20px 20px;
 }
 
-/* layout principal */
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -14,7 +13,6 @@
   margin: 0 auto;
 }
 
-/* coloana info */
 .footer-info {
   flex: 1;
 }
@@ -22,10 +20,9 @@
 .footer-title {
   font-size: 1.5rem;
   margin-bottom: 12px;
-  color: #e63946;
+  color: #F2CB4B;
 }
 
-/* rând cu icon + text (adresă, telefon, program) */
 .footer-line {
   display: flex;
   align-items: flex-start;
@@ -35,17 +32,15 @@
   line-height: 1.4;
 }
 
-/* icon universal (png/svg) colorat în #e63946 prin filter */
 .footer-icon {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  margin-top: 2px; /* aliniază cu textul pe multiple linii */
-  filter: brightness(0) saturate(100%) invert(25%) sepia(90%) saturate(5500%)
-  hue-rotate(340deg) brightness(95%) contrast(100%);
+  margin-top: 2px;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(44%)
+  saturate(748%) hue-rotate(356deg) brightness(101%) contrast(98%);
 }
 
-/* grup social */
 .footer-socials {
   margin-top: 12px;
   display: flex;
@@ -63,17 +58,17 @@
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(25%) sepia(90%) saturate(5500%)
-  hue-rotate(340deg) brightness(95%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(84%) sepia(44%)
+  saturate(748%) hue-rotate(356deg) brightness(101%) contrast(98%);
   transition: transform 0.3s ease, filter 0.2s ease;
 }
 
 .footer-socials img:hover {
   transform: scale(1.2);
-  /* la hover, menținem aceeași nuanță roșie (poți desatura dacă vrei efect diferit) */
+  filter: brightness(0) saturate(100%) invert(88%) sepia(53%)
+  saturate(800%) hue-rotate(356deg) brightness(105%) contrast(102%);
 }
 
-/* coloana hartă */
 .footer-map {
   flex: 1;
   min-height: 250px;
@@ -87,12 +82,11 @@
   border-radius: 8px;
 }
 
-/* butonul peste hartă */
 .map-button {
   position: absolute;
   right: 12px;
   bottom: 12px;
-  background-color: #e63946;
+  background-color: #F2CB4B;
   color: #fff;
   padding: 6px 12px;
   border-radius: 6px;
@@ -103,29 +97,27 @@
 }
 
 .map-button:hover {
-  background-color: #c72e3a;
+  background-color: #F2CB4B;
 }
 
-/* credit autor */
 .footer-madeby {
   display: block;
   margin-top: 6px;
   font-size: 0.85rem;
-  color: #777;
+  color: rgba(242, 204, 75, 0.66);
 }
 
 .footer-madeby a {
-  color: #e63946;
+  color: rgba(242, 204, 75, 0.66);
   text-decoration: none;
   font-weight: 600;
 }
 
 .footer-madeby a:hover {
   text-decoration: underline;
-  color: #ff4d5b;
+  color: #F2CB4B;
 }
 
-/* linia de jos */
 .footer-bottom {
   margin-top: 30px;
   text-align: center;
@@ -135,12 +127,10 @@
   padding-top: 15px;
 }
 
-/* linkuri simple din footer (dacă apar) */
-.footer a {
-  color: #f5f5f5;
-}
+/*.footer a {*/
+/*  color: #f5f5f5;*/
+/*}*/
 
-/* responsive */
 @media (max-width: 900px) {
   .footer-container {
     flex-direction: column;

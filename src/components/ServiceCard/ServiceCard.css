@@ -3,7 +3,7 @@
   --card-fg: #1a1a1a;
   --card-muted: #444;
   --card-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
-  --card-shadow-hover: 0 12px 28px rgba(230, 57, 70, 0.35);
+  --card-shadow-hover: 0 12px 28px rgba(242, 203, 75, 0.35);
   --card-radius: 18px;
   --card-pad-y: 35px;
   --card-pad-x: 28px;
@@ -48,7 +48,7 @@
   width: 32px;
   height: 32px;
   display: inline-block;
-  background-color: #e63946; /* roșul tău */
+  background-color: #F2CB4B; /* roșul tău */
   -webkit-mask: var(--icon) no-repeat center / contain;
   mask: var(--icon) no-repeat center / contain;
   flex: 0 0 auto;

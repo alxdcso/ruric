@@ -181,8 +181,8 @@ export const translations = {
     reviews: {
       title: 'Recenzii clienți',
       items: [
+        { name: 'Andreea Fortuna', text: 'Foarte mulțumită de diagnoza auto. Echipa mi-a explicat tot clar și pe înțeles.' },
         { name: 'Ion Popescu', text: 'Servicii excelente! Am schimbat frânele și totul a fost rapid și profesionist.' },
-        { name: 'Maria Ionescu', text: 'Foarte mulțumită de diagnoza auto. Echipa mi-a explicat tot clar și pe înțeles.' },
         { name: 'Andrei Rusu', text: 'Prețuri corecte și calitate. Vin la Ruric de peste 5 ani și recomand cu drag.' },
       ],
     },
@@ -379,8 +379,8 @@ export const translations = {
     reviews: {
       title: 'Отзывы клиентов',
       items: [
+        { name: 'Андрея Фортуна', text: 'Очень довольна компьютерной диагностикой. Команда всё объяснила понятно и доступно.' },
         { name: 'Ион Попеску', text: 'Отличные услуги! Заменили тормоза быстро и профессионально.' },
-        { name: 'Мария Йонеску', text: 'Очень довольна компьютерной диагностикой. Команда всё объяснила понятно и доступно.' },
         { name: 'Андрей Русу', text: 'Честные цены и качество. Хожу в Ruric уже более 5 лет и рекомендую всем.' },
       ],
     },
