@@ -5,19 +5,20 @@ import { translations } from '../../translations';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import SkeletonCard from '../Skeleton/SkeletonCard';
 import ConsultModal from '../ConsultModal/ConsultModal';
-import oilCar from 'images/services/car-oil.png'
-import enginePiston from 'images/services/piston.png'
-import temperature from 'images/services/car-cooler.png'
-import checkEngine from 'images/services/check-engine.png'
-import ac from 'images/services/ac.png'
-import brake from 'images/services/brakes.png'
-import electric from 'images/services/electric.png'
-import suspension from 'images/services/car-suspension.png'
-import dpf from 'images/services/dpf.png'
-import key from 'images/services/car-key.png'
-import safety from 'images/services/car-safety.png'
-import tire from 'images/services/tire.png'
-
+import {
+  ac,
+  brake,
+  checkEngine,
+  dpf,
+  electric,
+  enginePiston,
+  key,
+  oilCar,
+  safety,
+  suspension,
+  temperature,
+  tire,
+} from 'images/services/index';
 
 type ServiceItem = {
   title: string;
@@ -37,7 +38,7 @@ const iconMap: Record<string, string> = {
   dpf: dpf,
   carKey: key,
   carSafety: safety,
-  carTire: tire
+  carTire: tire,
 };
 
 const Services: React.FC = () => {
@@ -66,14 +67,14 @@ const Services: React.FC = () => {
         {loading
           ? Array.from({ length: 4 }).map((_, i) => <SkeletonCard key={i} />)
           : items.map((service) => (
-            <ServiceCard
-              key={service.title}
-              title={service.title}
-              iconSrc={iconMap[service.icon]}
-              points={service.points}
-              onClick={() => setModalOpen(true)}
-            />
-          ))}
+              <ServiceCard
+                key={service.title}
+                title={service.title}
+                iconSrc={iconMap[service.icon]}
+                points={service.points}
+                onClick={() => setModalOpen(true)}
+              />
+            ))}
       </div>
       <ConsultModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>

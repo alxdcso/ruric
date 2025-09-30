@@ -17,7 +17,9 @@
   box-shadow: var(--card-shadow);
   cursor: pointer;
   outline: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   width: 100%;
   max-width: 360px;
   min-width: 260px;
@@ -45,7 +47,7 @@
   width: 32px;
   height: 32px;
   display: inline-block;
-  background-color: #F2CB4B;
+  background-color: #f2cb4b;
   -webkit-mask: var(--icon) no-repeat center / contain;
   mask: var(--icon) no-repeat center / contain;
   flex: 0 0 auto;
@@ -85,16 +87,36 @@
   padding: 10px 14px;
   font-weight: 700;
   cursor: pointer;
-  background: #F2CB4B;
+  background: #f2cb4b;
   color: #1a1a1a;
-  transition: transform .12s ease;
+  transition: transform 0.12s ease;
 }
-.service-card__cta:hover { transform: translateY(-1px); }
+.service-card__cta:hover {
+  transform: translateY(-1px);
+}
 
 @media (prefers-reduced-motion: reduce) {
   .service-card,
   .service-card__icon-mask {
     transition: none;
     transform: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .service-card {
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .service-card {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 667px) {
+  .service-card {
+    margin: 10px 5px;
   }
 }

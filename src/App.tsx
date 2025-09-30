@@ -9,15 +9,17 @@ import Services from './components/Services/Services';
 import Tips from './components/Tips/Tips';
 import Footer from './components/Footer/Footer';
 import Reviews from './components/Review/Review';
-export const markAnimationsDone = () => {
-  document.body.classList.add('animations-done');
-};
+import GalleryMosaic from './components/GalleryMosaic/GalleryMosaic';
+import GallerySection from './components/GalleryCarousel/GallerySection';
+
 const App: React.FC = () => {
   return (
     <LanguageProvider>
       <div className="App">
         <Header />
         <BannerSlider />
+        <GalleryMosaic />
+        <GallerySection />
         <Hero />
         <Services />
         <Tips />

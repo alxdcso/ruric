@@ -16,7 +16,7 @@
   display: block;
   width: 100px;
   height: 4px;
-  background: #F2CB4B;
+  background: #f2cb4b;
   margin: 12px auto 0;
   border-radius: 2px;
 }
@@ -50,7 +50,7 @@
   height: 60px;
   margin: 0 auto 12px;
   border-radius: 50%;
-  background-color: #F2CB4B;
+  background-color: #f2cb4b;
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
@@ -71,4 +71,16 @@
   line-height: 1.6;
   color: #444;
   margin: 0;
+}
+
+@media (max-width: 987px) and (min-width: 624px) {
+  .reviews__grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  .reviews__grid .review-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 520px;
+  }
 }

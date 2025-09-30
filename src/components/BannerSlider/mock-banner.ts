@@ -1,14 +1,9 @@
-import oil from '../../images/banners/oil-change.jpg';
-import carElectronics from '../../images/banners/car-electronics.jpg';
-import carEngine from '../../images/banners/car-engine.jpg';
-import carBrake from '../../images/banners/car-brake.jpg';
-import carRepair from '../../images/banners/car-repair.jpg';
+import { oil, carElectronics, carEngine, carBrake, carRepair } from 'images/banners/index';
 
 export type Banner = {
   url: string;
   alt: string;
 };
-
 
 export const banners: Banner[] = [
   {

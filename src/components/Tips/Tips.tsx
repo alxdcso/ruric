@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Tips.css';
-import brake from '../../images/tips/brake.jpg';
-import oil from '../../images/tips/oil.jpg';
-import battery from '../../images/tips/battery.jpg';
-import tire from '../../images/tips/tire.jpg';
+import { brake, oil, tire, battery } from 'images/tips/index';
 import { useLanguage } from '../languageContext/laguageContext';
 import { translations } from '../../translations';
 

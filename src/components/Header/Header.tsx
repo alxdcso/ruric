@@ -28,9 +28,7 @@ const Header: React.FC = () => {
             <a href="tel:027124168">027 124 168</a>
           </div>
           <div className="lang-switch">
-            <button onClick={toggleLanguage}>
-              {language === 'ro' ? 'RU' : 'RO'}
-            </button>
+            <button onClick={toggleLanguage}>{language === 'ro' ? 'RU' : 'RO'}</button>
           </div>
         </div>
       </div>

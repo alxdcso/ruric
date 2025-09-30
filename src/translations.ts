@@ -5,7 +5,7 @@ export const translations = {
     header: {
       services: 'Servicii',
       tips: 'Sfaturi',
-      about: 'Despre',
+      about: 'Despre noi',
       reviews: 'Recenzii',
       top: {
         schedule: 'Luni – Sâmbătă 09:00–18:00',
@@ -16,6 +16,16 @@ export const translations = {
       title: 'Bine ai venit la Auto Service RURIC-SERVICE S.R.L.',
       text: 'Reparații rapide și de încredere pentru mașina ta',
       button: 'Programează-te acum',
+    },
+    gallery: {
+      title: 'Lucrările noastre',
+      description:
+        'Reparații complete — de la schimburi rapide la recondiționări capitale. Câteva dintre proiectele recente:',
+      cta: 'Contactează-ne',
+      carouselLabel: 'Galerie lucrări',
+      prev: 'Anterior',
+      next: 'Următor',
+      thumbs: 'Indicatori galerie',
     },
     about: {
       title: 'Despre noi',
@@ -43,7 +53,7 @@ export const translations = {
             'Schimb ulei cutie de viteze',
             'Schimb ulei reductor / diferențial',
             'Schimb filtre',
-            'Schimb lichid servodirecție '
+            'Schimb lichid servodirecție ',
           ],
         },
         {
@@ -53,7 +63,7 @@ export const translations = {
             'Demontare și inspecție completă motor',
             'Înlocuirea pieselor uzate',
             'Curățare și verificare injectoare / sistem injecție',
-            'Montaj și testare motor recondiționat'
+            'Montaj și testare motor recondiționat',
           ],
         },
         {
@@ -64,7 +74,7 @@ export const translations = {
             'Spălare sistem de răcire',
             'Înlocuire termostat defect',
             'Înlocuire pompă de apă',
-            'Curățarea ventilatorului de răcire'
+            'Curățarea ventilatorului de răcire',
           ],
         },
         {
@@ -86,7 +96,7 @@ export const translations = {
             'Diagnoză și reparare circuite electrice',
             'Reparație și calibrare senzori și unități electronice',
             'Programare / resoftare ECU și alte module',
-            'Remediere probleme pornire și încărcare'
+            'Remediere probleme pornire și încărcare',
           ],
         },
         {
@@ -97,7 +107,7 @@ export const translations = {
             'Schimb lichid frână și aerisire sistem',
             'Verificare etriere și conducte de frână',
             'Întreținere și reglaj frână de mână',
-            'Diagnoză ABS și ESP'
+            'Diagnoză ABS și ESP',
           ],
         },
         {
@@ -108,7 +118,7 @@ export const translations = {
             'Brațe, bucșe și articulații',
             'Verificare și schimb rulmenți roată',
             'Pivoți și capete de bară',
-            'Geometrie direcție (aliniere roți)'
+            'Geometrie direcție (aliniere roți)',
           ],
         },
         {
@@ -119,7 +129,7 @@ export const translations = {
             'Curățare și igienizare instalație A/C',
             'Verificare compresor și condensator',
             'Înlocuire filtru de polen / cabină',
-            'Testare etanșeitate și presiune sistem'
+            'Testare etanșeitate și presiune sistem',
           ],
         },
         {
@@ -130,7 +140,7 @@ export const translations = {
             'Regenerare sau înlocuire filtru DPF',
             'Curățare și dezactivare supapă EGR',
             'Curățare și dezactivare AdBlue',
-            'Eliminare depuneri carbon (carbon cleaning)'
+            'Eliminare depuneri carbon (carbon cleaning)',
           ],
         },
         {
@@ -141,7 +151,7 @@ export const translations = {
             'Codare telecomenzi pentru centralizare',
             'Realizare chei de rezervă',
             'Reprogramare chei pierdute',
-            'Adaptare chei la imobilizator'
+            'Adaptare chei la imobilizator',
           ],
         },
         {
@@ -152,7 +162,7 @@ export const translations = {
             'Schimb anvelope sezonier',
             'Reparații anvelope (plombare, vulcanizare)',
             'Verificare și corectare presiune',
-            'Reprogramare senzori TPMS'
+            'Reprogramare senzori TPMS',
           ],
         },
         {
@@ -163,33 +173,81 @@ export const translations = {
             'Montaj sisteme GPS tracking și antifurt',
             'Integrare senzori de parcare și camere video',
           ],
-        }
+        },
       ],
     },
     tips: {
       title: 'Sfaturi utile',
       items: [
-        { title: 'Cum îți dai seama că trebuie schimbate frânele', description: 'Scârțâit la frânare, vibrații în volan sau distanță de oprire mărită indică plăcuțe uzate ori discuri deformate.', alt: 'Pictogramă frână' },
-        { title: 'Când schimbi uleiul corect', description: 'Respectă intervalul de service și folosește ulei cu specificațiile producătorului. Verifică periodic nivelul.', alt: 'Pictogramă canistră de ulei' },
-        { title: 'Bateria dă semne de oboseală', description: 'Porniri greoaie, lumini slabe sau martori intermitenți pot indica o baterie slăbită sau probleme la alternator.', alt: 'Pictogramă baterie auto' },
-        { title: 'Anvelopele și aderența', description: 'Verifică adâncimea profilului, uzura neuniformă și presiunea corectă. Anvelopele potrivite scurtează frânarea.', alt: 'Pictogramă anvelope' },
+        {
+          title: 'Cum îți dai seama că trebuie schimbate frânele',
+          description:
+            'Scârțâit la frânare, vibrații în volan sau distanță de oprire mărită indică plăcuțe uzate ori discuri deformate.',
+          alt: 'Pictogramă frână',
+        },
+        {
+          title: 'Când schimbi uleiul corect',
+          description:
+            'Respectă intervalul de service și folosește ulei cu specificațiile producătorului. Verifică periodic nivelul.',
+          alt: 'Pictogramă canistră de ulei',
+        },
+        {
+          title: 'Bateria dă semne de oboseală',
+          description:
+            'Porniri greoaie, lumini slabe sau martori intermitenți pot indica o baterie slăbită sau probleme la alternator.',
+          alt: 'Pictogramă baterie auto',
+        },
+        {
+          title: 'Anvelopele și aderența',
+          description:
+            'Verifică adâncimea profilului, uzura neuniformă și presiunea corectă. Anvelopele potrivite scurtează frânarea.',
+          alt: 'Pictogramă anvelope',
+        },
       ],
     },
     blog: {
       title: 'Ultimele articole',
       posts: [
-        { title: 'Schimb ulei – ce trebuie să știi', excerpt: 'Când și de ce e important schimbul de ulei...', url: 'images/image1.jpeg' },
-        { title: '3 semne că trebuie să schimbi plăcuțele de frână', excerpt: 'Un scârțâit ciudat, pedala moale sau distanța mai mare de frânare pot indica o problemă la plăcuțele de frână.', url: '/blog/placute-frana' },
-        { title: 'Cum să prelungești viața motorului mașinii tale', excerpt: 'Schimbul regulat de ulei și filtre, folosirea combustibilului de calitate și reviziile la timp sunt esențiale.', url: '/blog/viata-motor' },
-        { title: 'Diagnoza computerizată – de ce este importantă?', excerpt: 'O diagnoză modernă detectează rapid probleme ascunse, economisind timp și bani.', url: '/blog/diagnoza-auto' },
+        {
+          title: 'Schimb ulei – ce trebuie să știi',
+          excerpt: 'Când și de ce e important schimbul de ulei...',
+          url: 'images/image1.jpeg',
+        },
+        {
+          title: '3 semne că trebuie să schimbi plăcuțele de frână',
+          excerpt:
+            'Un scârțâit ciudat, pedala moale sau distanța mai mare de frânare pot indica o problemă la plăcuțele de frână.',
+          url: '/blog/placute-frana',
+        },
+        {
+          title: 'Cum să prelungești viața motorului mașinii tale',
+          excerpt:
+            'Schimbul regulat de ulei și filtre, folosirea combustibilului de calitate și reviziile la timp sunt esențiale.',
+          url: '/blog/viata-motor',
+        },
+        {
+          title: 'Diagnoza computerizată – de ce este importantă?',
+          excerpt:
+            'O diagnoză modernă detectează rapid probleme ascunse, economisind timp și bani.',
+          url: '/blog/diagnoza-auto',
+        },
       ],
     },
     reviews: {
       title: 'Recenzii clienți',
       items: [
-        { name: 'Andreea Fortuna', text: 'Foarte mulțumită de diagnoza auto. Echipa mi-a explicat tot clar și pe înțeles.' },
-        { name: 'Ion Popescu', text: 'Servicii excelente! Am schimbat frânele și totul a fost rapid și profesionist.' },
-        { name: 'Andrei Rusu', text: 'Prețuri corecte și calitate. Vin la Ruric de peste 5 ani și recomand cu drag.' },
+        {
+          name: 'Andreea Fortuna',
+          text: 'Foarte mulțumită de diagnoza auto. Echipa mi-a explicat tot clar și pe înțeles.',
+        },
+        {
+          name: 'Ion Popescu',
+          text: 'Servicii excelente! Am schimbat frânele și totul a fost rapid și profesionist.',
+        },
+        {
+          name: 'Andrei Rusu',
+          text: 'Prețuri corecte și calitate. Vin la Ruric de peste 5 ani și recomand cu drag.',
+        },
       ],
     },
     footer: {
@@ -230,6 +288,16 @@ export const translations = {
         'чтобы ваш автомобиль был в безопасности и готов к дороге как можно быстрее. ' +
         'Мы делаем упор на качество, соблюдаем сроки и относимся к каждому клиенту профессионально.',
     },
+    gallery: {
+      title: 'Lucrările noastre',
+      description:
+        'Reparații complete — de la schimburi rapide la recondiționări capitale. Câteva dintre proiectele recente:',
+      cta: 'Contactează-ne',
+      carouselLabel: 'Galerie lucrări',
+      prev: 'Anterior',
+      next: 'Următor',
+      thumbs: 'Indicatori galerie',
+    },
     consult: {
       title: 'Получите консультацию сейчас',
       callUs: 'Позвоните нам по номеру:',
@@ -248,7 +316,7 @@ export const translations = {
             'Замена масла в коробке передач',
             'Замена масла в редукторе / дифференциале',
             'Замена фильтров',
-            'Замена жидкости ГУР'
+            'Замена жидкости ГУР',
           ],
         },
         {
@@ -258,7 +326,7 @@ export const translations = {
             'Демонтаж и полная диагностика двигателя',
             'Замена изношенных деталей',
             'Очистка и проверка форсунок / системы впрыска',
-            'Сборка и тестирование восстановленного двигателя'
+            'Сборка и тестирование восстановленного двигателя',
           ],
         },
         {
@@ -269,7 +337,7 @@ export const translations = {
             'Промывка системы охлаждения',
             'Замена неисправного термостата',
             'Замена помпы',
-            'Очистка вентилятора охлаждения'
+            'Очистка вентилятора охлаждения',
           ],
         },
         {
@@ -280,7 +348,7 @@ export const translations = {
             'Подробный отчёт для клиента',
             'Проверка параметров в реальном времени',
             'Тестирование датчиков и исполнительных механизмов (ABS, Airbag и т.д.)',
-            'Чтение сохранённой истории ошибок в ЭБУ'
+            'Чтение сохранённой истории ошибок в ЭБУ',
           ],
         },
         {
@@ -291,7 +359,7 @@ export const translations = {
             'Диагностика и ремонт электрических цепей',
             'Ремонт и калибровка датчиков и электронных блоков',
             'Программирование / перепрошивка ЭБУ и других модулей',
-            'Устранение проблем запуска и зарядки'
+            'Устранение проблем запуска и зарядки',
           ],
         },
         {
@@ -302,7 +370,7 @@ export const translations = {
             'Замена тормозной жидкости и прокачка системы',
             'Проверка суппортов и тормозных магистралей',
             'Обслуживание и регулировка ручного тормоза',
-            'Диагностика ABS и ESP'
+            'Диагностика ABS и ESP',
           ],
         },
         {
@@ -313,7 +381,7 @@ export const translations = {
             'Рычаги, сайлентблоки и шарниры',
             'Проверка и замена ступичных подшипников',
             'Шаровые опоры и наконечники рулевых тяг',
-            'Регулировка развала-схождения'
+            'Регулировка развала-схождения',
           ],
         },
         {
@@ -324,7 +392,7 @@ export const translations = {
             'Очистка и дезинфекция системы A/C',
             'Проверка компрессора и конденсатора',
             'Замена салонного фильтра',
-            'Тест на герметичность и давление системы'
+            'Тест на герметичность и давление системы',
           ],
         },
         {
@@ -335,7 +403,7 @@ export const translations = {
             'Регенерация или замена фильтра DPF',
             'Очистка и отключение клапана EGR',
             'Очистка и отключение системы AdBlue',
-            'Удаление углеродных отложений (carbon cleaning)'
+            'Удаление углеродных отложений (carbon cleaning)',
           ],
         },
         {
@@ -346,7 +414,7 @@ export const translations = {
             'Кодирование пультов для центрального замка',
             'Изготовление запасных ключей',
             'Перепрограммирование утерянных ключей',
-            'Адаптация ключей к иммобилайзеру'
+            'Адаптация ключей к иммобилайзеру',
           ],
         },
         {
@@ -357,7 +425,7 @@ export const translations = {
             'Сезонная замена шин',
             'Ремонт шин (пломбировка, вулканизация)',
             'Проверка и корректировка давления',
-            'Перепрограммирование датчиков TPMS'
+            'Перепрограммирование датчиков TPMS',
           ],
         },
         {
@@ -366,34 +434,75 @@ export const translations = {
           points: [
             'Установка сигнализаций и иммобилайзеров',
             'Монтаж систем GPS-трекинга и защиты от угона',
-            'Интеграция парктроников и камер заднего вида'
+            'Интеграция парктроников и камер заднего вида',
           ],
-        }
+        },
       ],
     },
     tips: {
       title: 'Полезные советы',
       items: [
-        { title: 'Когда нужно менять тормозные колодки', description: 'Скрип при торможении, вибрации в руле или увеличенный тормозной путь указывают на износ колодок или деформацию дисков.', alt: 'Иконка тормоза' },
-        { title: 'Когда правильно менять масло', description: 'Соблюдайте интервал обслуживания и используйте масло по спецификации производителя. Регулярно проверяйте уровень.', alt: 'Иконка канистры масла' },
-        { title: 'Аккумулятор подает признаки усталости', description: 'Трудный запуск, тусклый свет фар или мигающие индикаторы могут указывать на слабый аккумулятор или неисправность генератора.', alt: 'Иконка аккумулятора' },
-        { title: 'Шины и сцепление', description: 'Проверяйте глубину протектора, равномерность износа и правильное давление. Хорошие шины сокращают тормозной путь.', alt: 'Иконка шин' },
+        {
+          title: 'Когда нужно менять тормозные колодки',
+          description:
+            'Скрип при торможении, вибрации в руле или увеличенный тормозной путь указывают на износ колодок или деформацию дисков.',
+          alt: 'Иконка тормоза',
+        },
+        {
+          title: 'Когда правильно менять масло',
+          description:
+            'Соблюдайте интервал обслуживания и используйте масло по спецификации производителя. Регулярно проверяйте уровень.',
+          alt: 'Иконка канистры масла',
+        },
+        {
+          title: 'Аккумулятор подает признаки усталости',
+          description:
+            'Трудный запуск, тусклый свет фар или мигающие индикаторы могут указывать на слабый аккумулятор или неисправность генератора.',
+          alt: 'Иконка аккумулятора',
+        },
+        {
+          title: 'Шины и сцепление',
+          description:
+            'Проверяйте глубину протектора, равномерность износа и правильное давление. Хорошие шины сокращают тормозной путь.',
+          alt: 'Иконка шин',
+        },
       ],
     },
     blog: {
       title: 'Последние статьи',
       posts: [
-        { title: '3 признаков, что пора менять тормозные колодки', excerpt: 'Скрип, мягкая педаль или увеличенный тормозной путь могут указывать на проблему.' },
-        { title: 'Как продлить срок службы двигателя', excerpt: 'Регулярная замена масла и фильтров, качественное топливо и своевременное ТО — основа надежности.' },
-        { title: 'Компьютерная диагностика — почему это важно?', excerpt: 'Современная диагностика быстро выявляет скрытые проблемы, экономя время и деньги.' },
+        {
+          title: '3 признаков, что пора менять тормозные колодки',
+          excerpt:
+            'Скрип, мягкая педаль или увеличенный тормозной путь могут указывать на проблему.',
+        },
+        {
+          title: 'Как продлить срок службы двигателя',
+          excerpt:
+            'Регулярная замена масла и фильтров, качественное топливо и своевременное ТО — основа надежности.',
+        },
+        {
+          title: 'Компьютерная диагностика — почему это важно?',
+          excerpt:
+            'Современная диагностика быстро выявляет скрытые проблемы, экономя время и деньги.',
+        },
       ],
     },
     reviews: {
       title: 'Отзывы клиентов',
       items: [
-        { name: 'Андрея Фортуна', text: 'Очень довольна компьютерной диагностикой. Команда всё объяснила понятно и доступно.' },
-        { name: 'Ион Попеску', text: 'Отличные услуги! Заменили тормоза быстро и профессионально.' },
-        { name: 'Андрей Русу', text: 'Честные цены и качество. Хожу в Ruric уже более 5 лет и рекомендую всем.' },
+        {
+          name: 'Андрея Фортуна',
+          text: 'Очень довольна компьютерной диагностикой. Команда всё объяснила понятно и доступно.',
+        },
+        {
+          name: 'Ион Попеску',
+          text: 'Отличные услуги! Заменили тормоза быстро и профессионально.',
+        },
+        {
+          name: 'Андрей Русу',
+          text: 'Честные цены и качество. Хожу в Ruric уже более 5 лет и рекомендую всем.',
+        },
       ],
     },
     footer: {

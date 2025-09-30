@@ -2,11 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { translations } from '../../translations';
 import { useLanguage } from '../languageContext/laguageContext';
-import phoneIcon from '../../images/footer/phone-call.png';
-import mapIcon from '../../images/footer/map.png';
-import timeIcon from '../../images/footer/clock.png';
-import facebookIcon from '../../images/footer/facebook.png';
-import instagramIcon from '../../images/footer/instagram.png';
+import { phoneIcon, mapIcon, timeIcon, facebookIcon, instagramIcon } from 'images/footer/index';
 
 const Footer: React.FC = () => {
   const { language } = useLanguage();
@@ -19,8 +15,14 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-info">
-          <h3 className="footer-title">{t.company}</h3>
-
+          <h3 className="footer-title">
+            <span className="footer-autoservice">
+              <span className="footer-auto">Auto</span>
+              <span className="footer-service">Service</span>
+            </span>
+            <br />
+            <span className="footer-company">{t.company}</span>
+          </h3>
           <p className="footer-line">
             <img src={mapIcon} alt="" className="footer-icon" aria-hidden="true" />
             <span>
@@ -82,16 +84,6 @@ const Footer: React.FC = () => {
       <div className="footer-bottom">
         © {new Date().getFullYear()} {t.company}. {t.rights}
         <br />
-        <span className="footer-madeby">
-          Made by{' '}
-          <a
-            href="https://www.linkedin.com/in/alex-garabajii-30a127369/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Alex Garabajii
-          </a>
-        </span>
       </div>
     </footer>
   );

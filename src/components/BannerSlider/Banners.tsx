@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Banners.css';
 import { banners, Banner } from './mock-banner';
 
-
 const BannerSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

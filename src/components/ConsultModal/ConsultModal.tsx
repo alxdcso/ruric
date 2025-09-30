@@ -67,9 +67,9 @@ const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) => {
               <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" strokeWidth="8" />
               <circle cx="50" cy="50" r="12" fill="currentColor" />
               <g stroke="currentColor" strokeWidth="6" strokeLinecap="round">
-                <line x1="50" y1="6"  x2="50" y2="26" />
+                <line x1="50" y1="6" x2="50" y2="26" />
                 <line x1="50" y1="74" x2="50" y2="94" />
-                <line x1="6"  y1="50" x2="26" y2="50" />
+                <line x1="6" y1="50" x2="26" y2="50" />
                 <line x1="74" y1="50" x2="94" y2="50" />
                 <line x1="18" y1="18" x2="32" y2="32" />
                 <line x1="68" y1="68" x2="82" y2="82" />
@@ -79,9 +79,13 @@ const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) => {
             </svg>
           </div>
 
-          <h3 id="consult-title" className="cmodal__title">{c.title}</h3>
+          <h3 id="consult-title" className="cmodal__title">
+            {c.title}
+          </h3>
 
-          <button className="cmodal__close" onClick={onClose} aria-label={c.close}>✖</button>
+          <button className="cmodal__close" onClick={onClose} aria-label={c.close}>
+            ✖
+          </button>
         </div>
 
         <div className="cmodal__body">
@@ -89,7 +93,9 @@ const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) => {
           {phones.length > 0 && (
             <div className="cmodal__phones">
               {phones.map((ph, i) => (
-                <a key={i} href={`tel:${ph.replace(/\s+/g, '')}`}>{ph}</a>
+                <a key={i} href={`tel:${ph.replace(/\s+/g, '')}`}>
+                  {ph}
+                </a>
               ))}
             </div>
           )}
@@ -105,7 +111,9 @@ const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) => {
               {c.callNow}
             </button>
           )}
-          <button className="cmodal__btn" onClick={onClose}>{c.close}</button>
+          <button className="cmodal__btn" onClick={onClose}>
+            {c.close}
+          </button>
         </div>
       </div>
     </div>

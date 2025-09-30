@@ -1,7 +1,7 @@
 :root {
   --services-bg: linear-gradient(135deg, #f7f7f7 0%, #eaeaea 100%);
   --services-fg: #1a1a1a;
-  --services-accent: #F2CB4B;
+  --services-accent: #f2cb4b;
   --services-pad-y: 5px;
   --services-pad-x: 20px;
   --services-title-size: clamp(1.6rem, 2vw + 0.9rem, 2rem);
@@ -32,6 +32,8 @@
   padding: var(--services-pad-y) var(--services-pad-x);
   text-align: center;
   color: var(--services-fg);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .services__title {
@@ -46,14 +48,4 @@
   background-color: var(--services-accent);
   margin: 0 auto 12px;
   border-radius: 2px;
-}
-
-@media (max-width: 480px) {
-  .services__grid {
-    gap: 12px;
-  }
-
-  .services__card {
-    flex: 1 1 100%;
-  }
 }
