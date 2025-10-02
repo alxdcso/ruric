@@ -10,6 +10,7 @@ import safety from './car-safety.png';
 import suspension from './car-suspension.png';
 import temperature from './car-cooler.png';
 import tire from './tire.png';
+import horse from './horse.png'
 
 export {
   ac,
@@ -24,4 +25,5 @@ export {
   suspension,
   temperature,
   tire,
+  horse
 };

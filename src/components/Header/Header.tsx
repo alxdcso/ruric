@@ -22,9 +22,11 @@ const Header: React.FC = () => {
 
         <div className="top-right">
           <div className="phones">
-            <a href="tel:+37369153518">+373 691 535 18</a>
-            <a href="tel:+37369133180">+373 691 331 80</a>
-            <a href="tel:+37369329273">+373 693 292 73</a>
+            <a href="tel:+37369153518">069 153 518</a>
+            <a href="tel:+37369133180">069 133 180</a>
+            <a href="tel:+37369329273">069 329 273</a>
+            <a href="tel:+3737369102508">069 102 508</a>
+            <a href="tel:027123866">027 123 866</a>
             <a href="tel:027124168">027 124 168</a>
           </div>
           <div className="lang-switch">
@@ -38,6 +40,8 @@ const Header: React.FC = () => {
         <nav className="nav">
           <a href="#services">{t.services}</a>
           <a href="#tips">{t.tips}</a>
+          <a href="#chiptuning">{t.chiptuning}</a>
+          <a href="#gallery">{t.gallery}</a>
           <a href="#about">{t.about}</a>
           <a href="#reviews">{t.reviews}</a>
         </nav>

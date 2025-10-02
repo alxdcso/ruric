@@ -1,16 +1,33 @@
-.gallery {
-  width: 100%;
-  max-width: 1200px;
-  margin: 30px auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
+:root {
+  --gallery-accent: #f2cb4b;
 }
 
-.gallery__wrapper {
+.gsec {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 10px;
+}
+.gsec__title {
+  text-align: left;
+  font-size: clamp(1.6rem, 1.1rem + 1.4vw, 2.2rem);
+  margin: 0 0 14px;
+  color: #1a1a1a;
+}
+.gsec__title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 6px;
+  border-radius: 4px;
+  background: var(--gallery-accent);
+  margin-top: 10px;
+}
+
+.gallery__viewport {
   position: relative;
   width: 100%;
-  height: 800px;
+  aspect-ratio: 16 / 9;
+  max-height: 640px;
 }
 
 .gallery__slide {
@@ -19,7 +36,6 @@
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
-
 .gallery__slide.active {
   opacity: 1;
   z-index: 1;
@@ -40,25 +56,82 @@
   padding: 6px 12px;
   border-radius: 6px;
   font-size: 14px;
+  z-index: 3;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .gallery__dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 10px;
+  z-index: 3;
 }
 
 .gallery__dot {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   border: none;
-  background: #bbb;
+  background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: background 0.3s;
+  padding: 0;
+  aspect-ratio: 1/1;
 }
 
 .gallery__dot.active {
   background: #f2cb4b;
+}
+
+.gallery__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  transition: color 0.25s ease;
+}
+.gallery__arrow:hover {
+  color: #f2cb4b;
+}
+.gallery__arrow--left {
+  left: 20px;
+}
+.gallery__arrow--right {
+  right: 20px;
+}
+
+@media (max-width: 900px) {
+  .gallery__viewport {
+    aspect-ratio: 16 / 10;
+  }
+}
+@media (max-width: 560px) {
+  .gallery__viewport {
+    aspect-ratio: 4 / 3;
+  }
+  .gallery__arrow {
+    width: 38px;
+    height: 38px;
+  }
+  .gallery__dot {
+    width: 10px;
+    height: 10px;
+  }
 }

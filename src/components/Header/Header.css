@@ -97,7 +97,7 @@
   border-radius: 3px;
 }
 
-@media (max-width: 1296px) {
+@media (max-width: 1438px) {
   .top-bar {
     padding: 16px 24px;
     flex-wrap: wrap;
@@ -155,35 +155,7 @@
   }
 }
 
-@media (max-width: 900px) {
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav a {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .top-bar,
-  .bottom-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .phones {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
-  }
-}
-@media (max-width: 556px) {
+@media (max-width: 770px) {
   .top-bar {
     padding: 14px 16px;
     flex-direction: column;
@@ -205,17 +177,17 @@
   .top-right {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 12px;
+    row-gap: 14px;
     width: 100%;
     place-items: center;
   }
 
   .phones {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
-    column-gap: 36px;
-    row-gap: 8px;
+    column-gap: 30px;
+    row-gap: 10px;
     width: 100%;
     margin: 0;
   }
@@ -227,9 +199,10 @@
   }
 
   .lang-switch {
+    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin-top: 8px;
   }
   .lang-switch button {
     font-size: 13px;

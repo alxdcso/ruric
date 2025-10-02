@@ -18,6 +18,7 @@ import {
   suspension,
   temperature,
   tire,
+  horse,
 } from 'images/services/index';
 
 type ServiceItem = {
@@ -39,6 +40,7 @@ const iconMap: Record<string, string> = {
   carKey: key,
   carSafety: safety,
   carTire: tire,
+  horsePower: horse,
 };
 
 const Services: React.FC = () => {
@@ -55,6 +57,13 @@ const Services: React.FC = () => {
 
   const items = t.items as ServiceItem[];
 
+  const ctaText = language === 'ro' ? 'Află mai mult' : 'Узнать больше';
+
+  const scrollToChiptuning = () => {
+    const target = document.getElementById('chiptuning');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <section id="services" className="services" aria-labelledby="services-title">
       <h2 id="services-title" className="services__title">
@@ -66,16 +75,24 @@ const Services: React.FC = () => {
       <div className="services__grid">
         {loading
           ? Array.from({ length: 4 }).map((_, i) => <SkeletonCard key={i} />)
-          : items.map((service) => (
-              <ServiceCard
-                key={service.title}
-                title={service.title}
-                iconSrc={iconMap[service.icon]}
-                points={service.points}
-                onClick={() => setModalOpen(true)}
-              />
-            ))}
+          : items.map((service) => {
+              const isChiptuning =
+                service.icon === 'horsePower' || service.title.toLowerCase().includes('chip');
+
+              return (
+                <ServiceCard
+                  key={service.title}
+                  title={service.title}
+                  iconSrc={iconMap[service.icon]}
+                  points={service.points}
+                  onClick={() => setModalOpen(true)}
+                  ctaLabel={isChiptuning ? ctaText : undefined}
+                  onCta={isChiptuning ? scrollToChiptuning : undefined}
+                />
+              );
+            })}
       </div>
+
       <ConsultModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );

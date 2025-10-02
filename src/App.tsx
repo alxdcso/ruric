@@ -9,8 +9,8 @@ import Services from './components/Services/Services';
 import Tips from './components/Tips/Tips';
 import Footer from './components/Footer/Footer';
 import Reviews from './components/Review/Review';
-import GalleryMosaic from './components/GalleryMosaic/GalleryMosaic';
 import GallerySection from './components/GalleryCarousel/GallerySection';
+import ChiptuningBlock from './components/ChiptuningBlock/ChiptuningBlock';
 
 const App: React.FC = () => {
   return (
@@ -18,11 +18,11 @@ const App: React.FC = () => {
       <div className="App">
         <Header />
         <BannerSlider />
-        <GalleryMosaic />
-        <GallerySection />
         <Hero />
         <Services />
         <Tips />
+        <ChiptuningBlock />
+        <GallerySection />
         <About />
         <Reviews />
         <Footer />

@@ -1,4 +1,4 @@
-import { oil, carElectronics, carEngine, carBrake, carRepair } from 'images/banners/index';
+import { oil, carElectronics, carEngine, carRepair } from 'images/banners/index';
 
 export type Banner = {
   url: string;
@@ -17,10 +17,6 @@ export const banners: Banner[] = [
   {
     url: carEngine,
     alt: 'Car engine',
-  },
-  {
-    url: carBrake,
-    alt: 'Change car brakes',
   },
   {
     url: carRepair,

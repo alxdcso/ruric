@@ -6,9 +6,18 @@ export interface ServiceCardProps {
   iconSrc: string;
   points?: string[];
   onClick?: () => void;
+  ctaLabel?: string;
+  onCta?: () => void;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, iconSrc, points, onClick }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  title,
+  iconSrc,
+  points,
+  onClick,
+  ctaLabel,
+  onCta,
+}) => {
   const handleKeyDown: React.KeyboardEventHandler<HTMLDivElement> = (e) => {
     if (!onClick) return;
     if (e.key === 'Enter' || e.key === ' ') {
@@ -42,6 +51,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, iconSrc, points, onCli
           ))}
         </ul>
       ) : null}
+
+      {ctaLabel && (
+        <button
+          type="button"
+          className="service-card__cta"
+          onClick={(e) => {
+            e.stopPropagation();
+            onCta?.();
+          }}
+        >
+          {ctaLabel}
+        </button>
+      )}
     </div>
   );
 };
