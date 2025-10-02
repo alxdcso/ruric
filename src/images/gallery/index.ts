@@ -1,16 +1,17 @@
-import gallery2 from './gallery2.jpg';
-import gallery3 from './gallery3.jpg';
-import gallery4 from './gallery4.jpg';
-import gallery5 from './gallery5.jpg';
-import gallery6 from './gallery6.jpg';
-import gallery7 from './gallery7.jpg';
-import gallery8 from './gallery8.jpg';
-import gallery9 from './gallery9.jpg';
-import gallery11 from './gallery11.jpg';
-import gallery12 from './gallery12.jpg';
-import gallery14 from './gallery14.jpg';
+const gallery1 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery1.jpg?updatedAt=1759422696901";
+const gallery2 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery2.jpg?updatedAt=1759422696799";
+const gallery3 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery3.jpg?updatedAt=1759422696908";
+const gallery4 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery4.jpg?updatedAt=1759422696867";
+const gallery5 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery5.jpg?updatedAt=1759422696898";
+const gallery6 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery6.jpg?updatedAt=1759422696875";
+const gallery7 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery7.jpg?updatedAt=1759422696845";
+const gallery8 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery8.jpg?updatedAt=1759422696810";
+const gallery9 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery9.jpg?updatedAt=1759422696886";
+const gallery10 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery10.jpg?updatedAt=1759422696896";
+const gallery11 = "https://ik.imagekit.io/sbrqdqxneo/gallery/gallery11.jpg?updatedAt=1759422697026";
 
 export {
+  gallery1,
   gallery2,
   gallery3,
   gallery4,
@@ -19,7 +20,6 @@ export {
   gallery7,
   gallery8,
   gallery9,
+  gallery10,
   gallery11,
-  gallery12,
-  gallery14,
 };

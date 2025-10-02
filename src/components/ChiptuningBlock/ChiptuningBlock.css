@@ -99,7 +99,7 @@
   flex-direction: column;
   gap: 18px;
 }
-
+/*acordeonul pe telefon are titlu albastru BUG*/
 .chip__accordion {
   border: 1px solid #ddd;
   border-radius: 12px;

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
-import team from '../../images/about/team.jpg';
+import { team } from '../../images/about/index';
 import { translations } from '../../translations';
 import { useLanguage } from '../languageContext/laguageContext';
 

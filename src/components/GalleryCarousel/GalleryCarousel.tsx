@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import './GalleryCarousel.css';
 
-type Item = { src: string; alt: string; caption?: string };
+type Item = { src: string;};
 
 interface Props {
   items: Item[];
@@ -61,8 +61,7 @@ const Gallery: React.FC<Props> = ({ items, intervalMs = 4000 }) => {
             key={index}
             className={`gallery__slide ${index === current ? 'active' : 'inactive'}`}
           >
-            <img src={item.src} alt={item.alt} className="gallery__img" />
-            {item.caption && <div className="gallery__caption">{item.caption}</div>}
+            <img src={item.src} className="gallery__img" />
           </div>
         ))}
 
