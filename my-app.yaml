@@ -1,4 +1,0 @@
-name: ruric-landing
-services:
-  - name: web
-    dockerfile_path: Dockerfile
