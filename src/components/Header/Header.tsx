@@ -22,17 +22,10 @@ const Header: React.FC = () => {
 
         <div className="top-right">
           <div className="phones">
-            <blockquote
-              className="imgur-embed-pub"
-              lang="en"
-              data-id="a/BuxdkHR"
-              data-context="false"
-            >
-            </blockquote>
             <a href="tel:+37369153518">069 153 518</a>
             <a href="tel:+37369133180">069 133 180</a>
             <a href="tel:+37369329273">069 329 273</a>
-            <a href="tel:+3737369102508">069 102 508</a>
+            <a href="tel:+37369102508">069 102 508</a>
             <a href="tel:027123866">027 123 866</a>
             <a href="tel:027124168">027 124 168</a>
           </div>

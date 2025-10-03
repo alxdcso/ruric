@@ -99,7 +99,6 @@
   flex-direction: column;
   gap: 18px;
 }
-/*acordeonul pe telefon are titlu albastru BUG*/
 .chip__accordion {
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -113,11 +112,18 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+.chip__accordion-header:focus,
+.chip__accordion-header:active,
+.chip__accordion-header:hover {
+  color: #000;
+}
+
 .chip__accordion-header {
   width: 100%;
   text-align: left;
   padding: 16px 20px;
   background: #f6f6f6;
+  color: #000;
   font-weight: 700;
   font-size: 1.1rem;
   display: flex;
