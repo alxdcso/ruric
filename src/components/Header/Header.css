@@ -226,7 +226,7 @@
   .logo {
     grid-column: 1 / 2;
     grid-row: 1;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: left;
     margin: 0;
   }
@@ -269,15 +269,52 @@
   }
 
   .nav a {
-    font-size: 13px;
+    font-size: 15px;
     padding: 4px 6px;
     border-bottom: 2px solid transparent;
   }
 }
 
+@media (max-width: 558px) {
+  .mobile-info-row {
+    flex-wrap: wrap;
+    white-space: normal;
+    overflow-x: visible;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .mobile-info-row > :nth-child(2) {
+    display: none;
+  }
+
+  .mobile-info-row > :nth-child(1) {
+    order: 1;
+  }
+  .mobile-info-row > .mobile-lang-btn {
+    order: 2;
+  }
+
+  .mobile-info-row > :nth-child(3) {
+    order: 3;
+    flex: 0 0 100%; /* ocupă tot rândul */
+    width: 100%;
+    display: block; /* forțăm bloc separat */
+    text-align: center; /* centrăm textul */
+    margin-top: 4px;
+    white-space: normal; /* permite ruperea liniei */
+  }
+
+  .mobile-lang-btn {
+    padding: 2px 8px;
+    font-size: 12.5px;
+    margin-left: 25px;
+  }
+}
+
 @media (max-width: 380px) {
   .mobile-info-row {
-    font-size: 12.5px;
+    font-size: 11.5px;
   }
   .mobile-phones {
     font-size: 14px;

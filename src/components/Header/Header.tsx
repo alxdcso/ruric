@@ -42,9 +42,9 @@ const Header: React.FC = () => {
         </div>
         <div className="top-mobile">
           <div className="mobile-info-row">
-            <span className="mobile-piece">{t.topMobile.schedule}</span>
+            <span className="mobile-piece">{t.top.schedule}</span>
             <span>|</span>
-            <span className="mobile-piece">{t.topMobile.address}</span>
+            <span className="mobile-piece">{t.top.address}</span>
             <button className="mobile-lang-btn" onClick={toggleLanguage}>
               {language === 'ro' ? 'RU' : 'RO'}
             </button>
