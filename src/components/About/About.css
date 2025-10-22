@@ -120,3 +120,15 @@
     display: none;
   }
 }
+@media (max-width: 900px) {
+  .about__animate {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .about__animate.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

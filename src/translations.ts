@@ -13,6 +13,9 @@ export const translations = {
         schedule: 'Luni – Sâmbătă 09:00–18:00',
         address: 'Ocniţa, str Alexandru cel Bun 8A',
       },
+      topMobile: {
+        schedule: 'L–S 9:00–18:00',
+        address: 'Ocniţa, Alexandru cel Bun 8A',      },
     },
     hero: {
       title: 'Bine ai venit la Auto Service RURIC-SERVICE S.R.L.',
@@ -313,6 +316,10 @@ export const translations = {
       reviews: 'Отзывы',
       chiptuning: 'Чип-Тюнинг',
       gallery: 'Галерея работ',
+      topMobile: {
+        schedule: 'П–Сб 9:00–18:00',
+        address: 'Окница, Александру чел Бун 8A',
+      },
       top: {
         schedule: 'Понедельник – Суббота 09:00–18:00',
         address: 'Окница, ул. Александру чел Бун 8A',
