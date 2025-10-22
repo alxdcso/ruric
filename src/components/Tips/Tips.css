@@ -1,6 +1,7 @@
 .tips {
   padding: 60px 20px;
   background: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .tips__title {
@@ -27,6 +28,7 @@
   gap: 35px;
   max-width: 1400px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .tip-card {
@@ -44,22 +46,13 @@
   transition:
     opacity 1s ease,
     transform 1s ease;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .tip-card.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.tips__grid .tip-card:nth-child(odd) {
-  transform: translateX(-80px);
-}
-.tips__grid .tip-card:nth-child(even) {
-  transform: translateX(80px);
-}
-.tips__grid .tip-card.is-visible:nth-child(odd),
-.tips__grid .tip-card.is-visible:nth-child(even) {
-  transform: translateX(0);
 }
 
 .tips__grid .tip-card:nth-child(1) {
@@ -123,10 +116,5 @@
 
   .tip-card {
     min-height: 260px;
-  }
-
-  .tips__grid .tip-card:nth-child(odd),
-  .tips__grid .tip-card:nth-child(even) {
-    transform: translateY(60px);
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { translations } from '../../translations';
 import { useLanguage } from '../languageContext/laguageContext';
-import { phoneIcon, mapIcon, timeIcon, facebookIcon, instagramIcon } from 'images/footer/index';
+import { phoneIcon, mapIcon, timeIcon, facebookIcon } from 'images/footer/index';
 
 const Footer: React.FC = () => {
   const { language } = useLanguage();
@@ -56,11 +56,12 @@ const Footer: React.FC = () => {
           </p>
 
           <div className="footer-socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/sergej.rurinkevic?mibextid=wwXIfr&rdid=MFQwHAbKRX37gRFE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F176UeD7U7G%2F%3Fmibextid%3DwwXIfr#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={facebookIcon} alt="Facebook" className="footer-icon" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src={instagramIcon} alt="Instagram" className="footer-icon" />
             </a>
           </div>
         </div>
