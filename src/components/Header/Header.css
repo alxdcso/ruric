@@ -313,27 +313,6 @@
     justify-content: center;
   }
 
-  .mobile-info-row > :nth-child(2) {
-    display: none;
-  }
-
-  .mobile-info-row > :nth-child(1) {
-    order: 1;
-  }
-  .mobile-info-row > .mobile-lang-btn {
-    order: 2;
-  }
-
-  .mobile-info-row > :nth-child(3) {
-    order: 3;
-    flex: 0 0 100%;
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-top: 4px;
-    white-space: normal;
-  }
-
   .mobile-lang-btn {
     padding: 2px 8px;
     font-size: 12.5px;
@@ -354,8 +333,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    font-size: 12px;
+    font-size: 15px;
     width: 100%;
+    margin: 0;
   }
 
   .top-mobile .mobile-info-row .mobile-piece:first-of-type,
@@ -375,10 +355,11 @@
   .top-mobile .mobile-lang-btn {
     position: absolute;
     right: 0;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     padding: 4px 6px;
-    font-size: 10px;
+    font-size: 11px;
+    margin: 0;
   }
 
   .nav.nav--open {
