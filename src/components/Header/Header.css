@@ -247,7 +247,7 @@
     grid-template-rows: auto auto;
     align-items: center;
     gap: 10px 12px;
-    padding: 14px 16px;
+    padding: 5px 5px 5px 10px;
     background: #fff;
     width: 100%;
   }
