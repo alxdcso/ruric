@@ -305,6 +305,39 @@
 }
 
 @media (max-width: 558px) {
+  .top-mobile .mobile-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .top-mobile .mobile-info-row .mobile-piece:first-of-type {
+    display: inline-block;
+  }
+
+  .top-mobile .mobile-info-row .mobile-piece:last-of-type {
+    display: inline-block;
+    text-align: left;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .top-mobile .mobile-lang-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 4px 6px;
+    font-size: 11px;
+    margin: 0;
+  }
   .mobile-info-row {
     flex-wrap: wrap;
     white-space: normal;
@@ -328,39 +361,39 @@
     display: none !important;
   }
 
-  .top-mobile .mobile-info-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: 15px;
-    width: 100%;
-    margin: 0;
-  }
+  /*.top-mobile .mobile-info-row {*/
+  /*  display: flex;*/
+  /*  align-items: center;*/
+  /*  justify-content: center;*/
+  /*  position: relative;*/
+  /*  font-size: 15px;*/
+  /*  width: 100%;*/
+  /*  margin: 0;*/
+  /*}*/
 
   .top-mobile .mobile-info-row .mobile-piece:first-of-type,
   .top-mobile .mobile-info-row span:not(.mobile-piece) {
     display: none;
   }
 
-  .top-mobile .mobile-info-row .mobile-piece:last-of-type {
-    display: inline-block;
-    text-align: center;
-    max-width: 70%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  /*.top-mobile .mobile-info-row .mobile-piece:last-of-type {*/
+  /*  display: inline-block;*/
+  /*  text-align: center;*/
+  /*  max-width: 70%;*/
+  /*  white-space: nowrap;*/
+  /*  overflow: hidden;*/
+  /*  text-overflow: ellipsis;*/
+  /*}*/
 
-  .top-mobile .mobile-lang-btn {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 4px 6px;
-    font-size: 11px;
-    margin: 0;
-  }
+  /*.top-mobile .mobile-lang-btn {*/
+  /*  position: absolute;*/
+  /*  right: 0;*/
+  /*  top: 50%;*/
+  /*  transform: translateY(-50%);*/
+  /*  padding: 4px 6px;*/
+  /*  font-size: 11px;*/
+  /*  margin: 0;*/
+  /*}*/
 
   .nav.nav--open {
     max-height: 260px;
