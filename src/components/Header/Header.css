@@ -179,13 +179,11 @@
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* ===== <=1340px: telefoanele pe rând nou, totul centrat ===== */
 @media (max-width: 1340px) {
   .top-bar {
     padding: 16px 24px;
   }
 
-  /* Bara de sus devine pe coloane (două rânduri) */
   .top-desktop {
     flex-direction: column;
     align-items: center;
@@ -194,22 +192,19 @@
     text-align: center;
   }
 
-  /* Rândul 1: program + adresă (centrat) */
   .top-left {
     justify-content: center;
     gap: 10px;
   }
 
-  /* Rândul 2: telefoane + buton limbă (centrate) */
   .top-right {
     width: 100%;
     display: flex;
-    flex-direction: column; /* butonul limbă sub/după telefoane */
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
-  /* Telefoanele se pot rupe pe mai multe linii, centrate frumos */
   .phones {
     flex-wrap: wrap;
     justify-content: center;
@@ -217,7 +212,6 @@
     row-gap: 8px;
   }
 
-  /* (opțional) micșorăm puțin fontul să încapă mai des */
   .phones a {
     font-size: 15px;
   }
@@ -332,12 +326,12 @@
 
   .mobile-info-row > :nth-child(3) {
     order: 3;
-    flex: 0 0 100%; /* ocupă tot rândul */
+    flex: 0 0 100%;
     width: 100%;
-    display: block; /* forțăm bloc separat */
-    text-align: center; /* centrăm textul */
+    display: block;
+    text-align: center;
     margin-top: 4px;
-    white-space: normal; /* permite ruperea liniei */
+    white-space: normal;
   }
 
   .mobile-lang-btn {
@@ -346,14 +340,49 @@
     margin-left: 25px;
   }
 }
-
 @media (max-width: 380px) {
-  .mobile-info-row {
-    font-size: 11.5px;
+  .top-mobile {
+    padding: 6px 12px;
   }
-  .mobile-phones {
-    font-size: 14px;
+  #mobile-nav.nav a {
+    font-size: 13px;
   }
+  .top-mobile .mobile-phones {
+    display: none !important;
+  }
+
+  .top-mobile .mobile-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .top-mobile .mobile-info-row .mobile-piece:first-of-type,
+  .top-mobile .mobile-info-row span:not(.mobile-piece) {
+    display: none;
+  }
+
+  .top-mobile .mobile-info-row .mobile-piece:last-of-type {
+    display: inline-block;
+    text-align: center;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .top-mobile .mobile-lang-btn {
+    position: absolute;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+
   .nav.nav--open {
     max-height: 260px;
   }

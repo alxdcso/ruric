@@ -25,6 +25,7 @@ type ServiceItem = {
   title: string;
   icon: string;
   points?: string[];
+  cta?: { learnMore?: string };
 };
 
 const iconMap: Record<string, string> = {
@@ -57,7 +58,9 @@ const Services: React.FC = () => {
 
   const items = t.items as ServiceItem[];
 
-  const ctaText = language === 'ro' ? 'Află mai mult' : 'Узнать больше';
+  const ctaTextChiptuning = language === 'ro' ? 'Află mai mult' : 'Узнать больше';
+  const consultationLabel =
+    language === 'ro' ? 'Programează consultație' : 'Записаться на консультацию';
 
   const scrollToChiptuning = () => {
     const target = document.getElementById('chiptuning');
@@ -79,6 +82,14 @@ const Services: React.FC = () => {
               const isChiptuning =
                 service.icon === 'horsePower' || service.title.toLowerCase().includes('chip');
 
+              const ctaLabel = service.cta?.learnMore
+                ? service.cta.learnMore
+                : isChiptuning
+                  ? ctaTextChiptuning
+                  : consultationLabel;
+
+              const onCta = isChiptuning ? scrollToChiptuning : () => setModalOpen(true);
+
               return (
                 <ServiceCard
                   key={service.title}
@@ -86,8 +97,8 @@ const Services: React.FC = () => {
                   iconSrc={iconMap[service.icon]}
                   points={service.points}
                   onClick={() => setModalOpen(true)}
-                  ctaLabel={isChiptuning ? ctaText : undefined}
-                  onCta={isChiptuning ? scrollToChiptuning : undefined}
+                  ctaLabel={ctaLabel}
+                  onCta={onCta}
                 />
               );
             })}
